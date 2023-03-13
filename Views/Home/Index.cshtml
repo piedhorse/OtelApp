@@ -1,0 +1,40 @@
+﻿@model OtelApp.Models.rezbilgi
+
+@{
+    ViewData["Title"] = "Home Page";
+
+
+
+
+}
+<div class="text-center">
+    <h1 class="display-4">Rezervasyon yap</h1>
+
+    <form class="form-group" method="post">
+
+    <div>
+        <label>Giris Tarihi</label>
+
+           <input name="Gtarih" type="date"></input>
+       
+    </div>
+   
+    <div>
+        <label>Cikis Tarihi</label>
+
+
+            <input name="Ctarih" type="date"></input>
+    </div>
+
+    <div>
+        <label>kisi sayisi</label>
+            <input name="kisisayisi" type="text"></input>
+
+    </div>
+    <div style="margin-top:15px;">
+            <input name="kisisayisi" type="submit" value="Uygun Rezervasyonu Bul!"</input>
+        </div>
+    </form>
+    
+</div>
+

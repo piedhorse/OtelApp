@@ -1,0 +1,46 @@
+﻿@using OtelApp.DataDB;
+@model IEnumerable<OtelApp.DataDB.OtelOdalari>
+
+@{
+
+    ViewBag.Title = "Uygun Odalar";
+
+        }
+<h1> Uygun Odalar</h1>
+   
+
+
+<table class="table table-bordered">
+    <tr>
+        <th> Fiyat</th>
+        <th> Oda adlari</th>
+     <th>Kapasite</th>
+
+    </tr>
+    <tbody>
+        @foreach (var ktgr in Model)
+        {
+         <tr>
+                @for (int i = 0; i < @ViewBag.WeekdayCount; i++)
+                {
+                   ktgr.Fiyat = ktgr.Fiyat + ktgr.Fiyat * 0.30m;
+                }
+                @if (ViewBag.kisisayisi == true)
+                {
+                    ktgr.Fiyat = ktgr.Fiyat + ktgr.Fiyat * 0.20m;
+                    ktgr.Kapasite = 3;
+                }
+
+                <td>@((int?)ktgr.Fiyat)</td>
+
+
+
+
+                <td> @ktgr.OdaAdi</td>
+              
+                <td>@ktgr.Kapasite</td>
+
+            </tr>
+        }
+    </tbody>
+</table>
