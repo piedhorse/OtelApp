@@ -40,6 +40,10 @@ konaklama standart fiyatının %20 fazlası şeklindedir.
 
 belirlemelidir
 
-6. Kalınacak tarihler içindeki haftasonu gecelemelerini bulup ücreti haftasonu
+6. Kalınacak tarihler içindeki haftasonu gecelemelerini bulup ücreti haftasonu fiyatlarından hesaplanmalıdır.
 
-fiyatlarından hesaplanmalıdır.
+
+https://user-images.githubusercontent.com/96746943/224937066-297a6dc1-989a-4688-aaa3-4fd1c07927e0.mp4
+
+
+
